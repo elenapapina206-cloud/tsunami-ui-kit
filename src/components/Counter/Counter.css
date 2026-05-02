@@ -1,0 +1,60 @@
+/* src/components/Counter/Counter.css */
+
+.counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  padding: 4px 8px;
+}
+
+/* Стиль для подписи "Количество:" */
+.counter-label {
+  font-size: 14px;
+  color: #08081B;
+  margin-right: 4px;
+}
+
+.counter-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #0063FF;
+  background: transparent; 
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000; 
+}
+
+.counter-btn:hover:not(:disabled) {
+  background-color: #0053D5;
+  color: white; 
+  border-color: #0053D5;
+}
+
+.counter-btn:active:not(:disabled) {
+  color: #0063FF;
+  transform: scale(0.95);
+  background: white;
+}
+
+.counter-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  background-color: white;
+  border-color: #D1D5DB;
+  color: #9CA3AF;
+}
+
+.counter-value {
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 28px;
+  text-align: center;
+  color: #1F2937;
+}

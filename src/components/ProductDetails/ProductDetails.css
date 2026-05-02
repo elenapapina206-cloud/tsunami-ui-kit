@@ -1,0 +1,133 @@
+.product-details {
+  width: 480px;
+  height: 600px;
+  background-color: rgba(234, 235, 255, 0.7);
+  border-radius: 16px;
+  position: relative;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
+}
+
+.product-details:hover {
+  box-shadow: 0 0 12px #EAEBFF;
+}
+.product-details-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.product-details-close-icon {
+  width: 20px;
+  height: 20px;
+  color: #0063FF;
+  transition: color 0.2s ease;
+}
+
+.product-details-close:hover {
+  background-color: #0063FF;
+}
+
+.product-details-close:hover .product-details-close-icon {
+  color: white;
+}
+
+.product-details-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  color: #08081B;
+  line-height: 1.3;
+  padding-right: 24px;
+}
+
+.product-details-image-wrapper {
+  width: 432px;
+  height: 234px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;  
+  position: relative;
+  border-radius: 16px;
+}
+
+.product-details-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 16px 20px  rgba(0, 0, 0, 0.25);
+}
+
+/* Состав и острота */
+.product-details-composition {
+  margin-bottom: 20px;
+}
+
+.product-details-composition-text {
+  font-size: 14px;
+  color: #191A55;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.product-details-info {
+  font-size: 14px;
+  color: #191A55;
+  margin: 0;
+}
+
+.product-details-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  margin-top: auto;
+  padding-left: 24px;
+}
+
+.product-details-quantity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-details-quantity-label {
+  font-size: 14px;
+  color: #08081B;
+}
+
+.product-details-price-total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.product-details-price-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product-details-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #08081B;
+}

@@ -1,0 +1,247 @@
+/* src/components/OrderForm/OrderForm.css */
+
+.order-form {
+  width: 480px;
+  min-height: 736px;
+  background-color: rgba(234, 235, 255, 0.7);
+  border-radius: 16px;
+  padding: 24px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.order-form:hover {
+  box-shadow: 0 0 12px #EAEBFF;
+}
+
+/* Крестик */
+.order-form-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.order-form-close-icon {
+  width: 20px;
+  height: 20px;
+  color: #0063FF;
+  transition: all 0.2s ease;
+}
+
+.order-form-close:hover {
+  background-color: #0063FF;
+}
+
+.order-form-close:hover .order-form-close-icon {
+  color: white;
+}
+
+.order-form-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #08081B;
+  margin: 0 0 20px 0;
+  padding-right: 24px;
+}
+
+.order-form-cart-list {
+  margin-bottom: 24px;
+  flex: 1;
+}
+
+/* Шапка: Список, Количество, Цена */
+.order-form-cart-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 16px;
+}
+
+.order-form-cart-header span,
+.order-form-cart-header-right span {
+  font-size: 16px;
+  color: #08081B;
+  font-weight: 500;
+}
+
+.order-form-cart-header-right {
+  display: flex;
+  gap: 48px;
+}
+
+/* Товар: Паста с креветками, 1 шт., 650 */
+.order-form-cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.order-form-item-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #191A55;
+}
+
+.order-form-item-details {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.order-form-item-quantity {
+  font-size: 16px;
+  color: #191A55;
+  min-width: 50px;
+  text-align: center;
+}
+
+.order-form-item-price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #191A55;
+  min-width: 60px;
+  text-align: right;
+}
+
+/* Номер телефона, Итого, Доставка, 650, 100 */
+.order-form-row span:first-child,
+.order-form-label {
+  font-size: 14px;
+  color: #2F3294;
+}
+
+.order-form-row span:last-child {
+  font-size: 14px;
+  color: #2F3294;
+}
+
+.order-form-phone {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.order-form-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2F3294;
+  flex-shrink: 0;
+}
+
+.order-form-phone-input {
+  flex: 1;
+  height: 48px;
+  padding: 0 16px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #2F3294;
+  background: transparent;
+  border: 1px solid #C8C8C8;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.order-form-phone-input:focus {
+  border-color: #0063FF;
+}
+
+.order-form-phone-input::placeholder {
+  color: #9CA3AF;
+}
+
+/* Итого и Доставка */
+.order-form-summary {
+  margin-bottom: 32px;
+}
+
+.order-form-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+/* Всего и 750 */
+.order-form-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0 8px;
+  margin-top: 8px;
+  border-top: 1px solid #000000;
+}
+
+.order-form-total span:first-child {
+  font-size: 24px;
+  font-weight: 700;
+  color: #08081B;
+}
+
+.order-form-total-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0063FF;
+}
+
+/* Кнопки */
+.order-form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  margin-top: auto;
+}
+
+.order-form-clear-btn {
+  width: 181px;
+  height: 56px;
+  background: transparent;
+  border: 1px solid #B90127;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #B90127;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.order-form-clear-btn:hover {
+  background-color: #DA2349;
+  color: white;
+  border-color: #DA2349;
+}
+
+.order-form-submit-btn {
+  width: 181px;
+  height: 56px;
+  background: #0063FF;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.order-form-submit-btn:hover {
+  background-color: #3080FF;
+}

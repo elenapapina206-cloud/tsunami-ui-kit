@@ -1,0 +1,39 @@
+/* src/components/InfoCard/InfoCard.css */
+
+.info-card {
+  width: 700px;
+  height: 110px;
+  background-color: #EAEBFF;
+  box-shadow: 0 0 12px #EAEBFF; 
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.info-card-content {
+  width: 100%;
+  color: #000000;
+}
+
+.info-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: #000000;
+}
+
+.info-card-description {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 4px 0;
+  color: #000000;
+}
+
+.info-card-subtitle {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.8;
+}

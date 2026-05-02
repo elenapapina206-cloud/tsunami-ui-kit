@@ -1,0 +1,435 @@
+.footer {
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 48px;
+}
+
+/* Общие стили*/
+.footer a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+/* ВАРИАНТ footer №1: DEFAULT */
+.footer-default .footer-default-blocks {
+  display: flex;
+  gap: 48px;
+  justify-content: space-between;
+}
+
+.footer-default .footer-block-1,
+.footer-default .footer-block-2,
+.footer-default .footer-block-3 {
+  width: 596px;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-default .block1-top {
+  display: flex;
+  gap: 24px;
+}
+
+.logo-square {
+  width: 100px;
+  height: 94px;
+  background: transparent;
+  flex-shrink: 0;
+}
+.logo-square img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slogan-title {
+  padding: 24px 24px 24px 0;
+}
+.slogan-title .slogan {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.address-block {
+  padding: 10px;
+  margin-top: 0;
+}
+.address-block p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.footer-block-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.schedule-block p,
+.contacts-block p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+.schedule-block p:first-child,
+.contacts-block p:first-child {
+  font-weight: 600;
+}
+.schedule-block {
+  margin-bottom: 16px;
+}
+
+.footer-default .footer-block-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;  
+}
+
+.footer-default .social-block {
+  text-align: left;  
+}
+
+.footer-default .social-icons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  justify-content: flex-start; 
+}
+
+/* ВАРИАНТ footer №2: COMPACT */
+.footer-compact .footer-compact-blocks {
+  display: flex;
+  gap: 48px;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.compact-block-1 {
+  width: 636px;
+  height: 208px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.compact-block-1 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.compact-block-1 ul li {
+  margin: 0;
+  text-align: left;
+}
+
+.compact-block-1 ul li a {
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.compact-block-2 {
+  width: 500px;
+  height: 208px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.logo-square-small {
+  width: 80px;
+  height: 80px;
+}
+.logo-square-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.compact-slogan {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.compact-block-3 {
+  width: 636px;
+  height: 208px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.compact-block-3 p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* ВАРИАНТ footer №3: MINIMAL */
+.footer-minimal .footer-minimal-blocks {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.minimal-block-1 {
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.minimal-logo-area {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.logo-square-medium {
+  width: 100px;
+  height: 94px;
+}
+.logo-square-medium img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.minimal-company-name {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.minimal-slogan {
+  font-size: 14px;
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+.minimal-block-2 {
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end; 
+  gap: 24px;
+  text-align: right; 
+}
+
+.minimal-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-end;
+}
+
+.minimal-links ul li a {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.minimal-social span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end; 
+}
+
+.minimal-copyright p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.minimal-divider {
+  display: none;
+}
+
+
+/* СВЕТЛАЯ ТЕМА */
+.footer-light {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* DEFAULT - цвета */
+.footer-light.footer-default .footer-block-1 .slogan-title .slogan,
+.footer-light.footer-default .address-block p,
+.footer-light.footer-default .social-icons a,
+.footer-light.footer-default .footer-block-2 .schedule-block p:first-child,
+.footer-light.footer-default .footer-block-3 .social-block span {
+  color: #0053D5;
+}
+.footer-light.footer-default .footer-block-2 .schedule-block p:not(:first-child),
+.footer-light.footer-default .footer-block-2 .contacts-block p,
+.footer-light.footer-default .footer-block-3 .copyright-block p {
+  color: #0D0D2C;
+}
+
+/* DEFAULT - ссылка "Контакты и реквизиты" */
+.footer-light.footer-default .contacts-link {
+  color: #0053D5;
+}
+
+/* DEFAULT - нажатые ссылки */
+.footer-light.footer-default .contacts-link:active {
+  color: #9EC4FF;
+}
+.footer-light.footer-default .social-icons a:active {
+  color: #9EC4FF;
+}
+
+/* COMPACT - цвета */
+.footer-light.footer-compact .compact-block-1 ul li a {
+  color: #0053D5;
+}
+.footer-light.footer-compact .compact-block-1 ul li:nth-child(3) a {
+  color: #0D0D2C;
+}
+.footer-light.footer-compact .compact-block-3 p {
+  color: #0D0D2C;
+}
+.footer-light.footer-compact .compact-slogan {
+  color: #0053D5;
+}
+
+/* COMPACT - нажатые ссылки */
+.footer-light.footer-compact .compact-block-1 ul li a:active {
+  color: #9EC4FF;
+}
+
+/* MINIMAL - цвета */
+.footer-light.footer-minimal .minimal-company-name,
+.footer-light.footer-minimal .minimal-social span,
+.footer-light.footer-minimal .minimal-copyright p {
+  color: #0053D5;
+}
+.footer-light.footer-minimal .minimal-links ul li a {
+  color: #0053D5;
+}
+.footer-light.footer-minimal .minimal-links ul li:nth-child(3) a {
+  color: #0D0D2C;
+}
+.footer-light.footer-minimal .minimal-slogan {
+  color: #9EC4FF;
+}
+/* ДОБАВИТЬ ЗДЕСЬ */
+.footer-light.footer-minimal .social-icons a {
+  color: #9EC4FF;
+}
+.footer-light.footer-minimal .social-icons a:active {
+  color: #0053D5;
+}
+
+/* MINIMAL - нажатые ссылки */
+.footer-light.footer-minimal .minimal-links ul li a:active {
+  color: #9EC4FF;
+}
+
+/* ТЁМНАЯ ТЕМА */
+.footer-dark {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.footer-dark a {
+  color: inherit;
+}
+
+/* DEFAULT - цвета */
+.footer-dark.footer-default .footer-block-2 .schedule-block p:first-child,
+.footer-dark.footer-default .footer-block-3 .copyright-block p {
+  color: #9395EF;
+}
+.footer-dark.footer-default .footer-block-1 .slogan-title .slogan,
+.footer-dark.footer-default .address-block p,
+.footer-dark.footer-default .social-icons a,
+.footer-dark.footer-default .footer-block-2 .schedule-block p:not(:first-child),
+.footer-dark.footer-default .footer-block-2 .contacts-block p,
+.footer-dark.footer-default .footer-block-3 .social-block span {
+  color: #CEE1FF;
+}
+
+/* DEFAULT - ссылка "Контакты и реквизиты" */
+.footer-dark.footer-default .contacts-link {
+  color: #CEE1FF;
+}
+
+/* DEFAULT - нажатые ссылки */
+.footer-dark.footer-default .contacts-link:active {
+  color: #0053D5;
+}
+.footer-dark.footer-default .social-icons a:active {
+  color: #0053D5;
+}
+
+/* COMPACT - цвета */
+.footer-dark.footer-compact .compact-block-1 ul li a {
+  color: #CEE1FF;
+}
+.footer-dark.footer-compact .compact-block-1 ul li:nth-child(3) a,
+.footer-dark.footer-compact .compact-block-3 p {
+  color: #9395EF;
+}
+.footer-dark.footer-compact .compact-slogan {
+  color: #CEE1FF;
+}
+
+/* COMPACT - нажатые ссылки */
+.footer-dark.footer-compact .compact-block-1 ul li a:active {
+  color: #0053D5;
+}
+
+/* MINIMAL - цвета */
+.footer-dark.footer-minimal .minimal-company-name,
+.footer-dark.footer-minimal .minimal-social span,
+.footer-dark.footer-minimal .minimal-copyright p {
+  color: #CEE1FF;
+}
+.footer-dark.footer-minimal .minimal-links ul li a {
+  color: #CEE1FF;
+}
+.footer-dark.footer-minimal .minimal-links ul li:nth-child(3) a {
+  color: #9395EF;
+}
+.footer-dark.footer-minimal .minimal-slogan {
+  color: #9EC4FF;
+}
+.footer-dark.footer-minimal .social-icons a {
+  color: #9EC4FF;
+}
+.footer-dark.footer-minimal .social-icons a:active {
+  color: #0053D5;
+}
+
+/* MINIMAL - нажатые ссылки */
+.footer-dark.footer-minimal .minimal-links ul li a:active {
+  color: #0053D5;
+}
