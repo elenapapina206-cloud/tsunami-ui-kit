@@ -1,0 +1,201 @@
+/* Настройки кнопки */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  font-weight: auto;  
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/*  Размеры  */
+.button-large {
+  height: 56px;
+  padding: 16px 24px;
+  font-size: 16px;
+}
+.button-medium {
+  height: 48px;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+.button-small {
+  height: 40px;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+.button-verysmall {
+  height: 32px;
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+/*  Типы, Default  */
+.button-default {
+  background-color: #0063FF;
+  color: white;
+}
+.button-default:hover:not(:disabled) {
+  background-color: #3080FF;
+}
+/* pressed для default */
+.button-default.button-pressed {
+  background-color: #0063FF;
+  transform: translateY(1px);
+}
+.button-default:disabled {
+  background-color: #C8C8C8;
+  color: #969696;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Типы,Text  */
+.button-text {
+  background-color: transparent;
+  color: #0063FF;
+}
+.button-text:hover:not(:disabled) {
+
+  background-color: #C8C8C8;
+  color: #0063FF;
+}
+.button-text.button-pressed {
+  background-color: transparent;
+  color: #0063FF;
+}
+.button-text:disabled {
+  background-color: transparent;
+  color: #969696;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Типы,Outlined  */
+.button-outlined {
+  background-color: transparent;
+  border: 1px solid #0063FF;
+  color: #0063FF;
+}
+.button-outlined:hover:not(:disabled) {
+  background-color: #0053D5;
+  color: white;
+}
+.button-outlined.button-pressed {
+  background-color: transparent;
+  border: 1px solid #0063FF;
+  color: #0063FF;
+}
+.button-outlined:disabled {
+  background-color: transparent;
+  border: 1px solid #C8C8C8;
+  color: #969696;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ===== Состояние disabled ===== */
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+
+/* Кнопка с иконкой*/
+.button-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 8px;
+  border-radius: 8px;
+  font-weight: auto;  
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/* Размеры иконки */
+.button-large .button-icon {
+  width: 22px;
+  height: 22px;
+  font-size: 16px;
+}
+.button-medium .button-icon {
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+}
+.button-small .button-icon {
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+}
+.button-verysmall .button-icon {
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+}
+
+/* Отступ между иконкой и текстом */
+.button-icon-left {
+  margin-right: 8px;
+}
+.button-icon-right {
+  margin-left: 8px;
+}
+
+
+/* Кнопка только с иконкой  */
+.button-icon-only {
+  padding: 0 !important;       /* нет горизонтальных отступов */
+  width: auto;                 /* ширина авто */
+  min-width: var(--button-size);  /* квадрат */
+}
+
+/* Делаем квадратную кнопку: ширина = высоте */
+.button-icon-only.button-large {
+  --button-size: 56px;
+  width: var(--button-size);
+}
+.button-icon-only.button-medium {
+  --button-size: 48px;
+  width: var(--button-size);
+}
+.button-icon-only.button-small {
+  --button-size: 40px;
+  width: var(--button-size);
+}
+.button-icon-only.button-verysmall {
+  --button-size: 32px;
+  width: var(--button-size);
+}
+
+.button-icon-only .button-icon {
+  margin: 0; /* без отступа */
+}
+
+
+/* Тень для кнопки*/
+.button-elevated {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);   
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.button-elevated:hover:not(:disabled) {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.48);
+}
+.button-elevated.button-pressed {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.48);
+  transform: translateY(1px);
+}
+.button-elevated:disabled {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*# sourceMappingURL=components-Button-Button-stories.683bb46a.chunk.css.map*/

@@ -1,0 +1,39 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 0px 12px;
+  border-radius: 12px;
+  font-weight: auto;
+  font-size: 12px;
+  white-space: nowrap;
+  height: 24px;
+}
+
+.badge-icon {
+  width: 18px;
+  height: 18px;
+  stroke: white;
+  fill: transparent;
+}
+
+/* Цвета значков */
+.badge-new {
+  background-color: #BBBDFF;
+  color: white;
+}
+.badge-hit {
+  background-color: #DD7A8E;
+  color: white;
+}
+.badge-spicy {
+  background-color: #DA2349;
+  color: white;
+}
+.badge-popular {
+  background-color: #609EFF;
+  color: white;
+}
+
+/*# sourceMappingURL=components-Badge-Badge-stories.3fa7255f.chunk.css.map*/

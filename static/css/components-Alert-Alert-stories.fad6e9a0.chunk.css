@@ -1,0 +1,68 @@
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 280px;
+  max-width: 400px;
+}
+
+.alert-message {
+  flex: 1 1;
+  line-height: 1.4;
+}
+
+.alert-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+/* Наведение на кнопку */
+.alert-close:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.alert-close:active {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(0.95);
+}
+
+.close-icon {
+  width: 22px;
+  height: 22px;
+  color: #000000;
+  transition: color 0.2s ease;
+}
+
+/* Цвет фона */
+.alert-info {
+  background-color: #609EFF;
+  color: #0047B7;
+}
+.alert-success {
+  background-color: #66DDB3;
+  color: #00925F;
+}
+.alert-error {
+  background-color: #FF5377;
+  color: #B90127;
+}
+.alert-warning {
+  background-color: #FFE08B;
+  color: #CE9700;
+}
+
+/*# sourceMappingURL=components-Alert-Alert-stories.fad6e9a0.chunk.css.map*/
